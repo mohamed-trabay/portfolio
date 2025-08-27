@@ -73,8 +73,10 @@ nav ul li a:hover {
 
 .hero-text h2 {
   text-align: left;
-  margin-top: 0.1rem; /* أو 0 لو عايزها تلتصق تماماً */
-  margin-bottom: 0.4rem; /* تحكم في المسافة السفلية أيضاً لو حبيت */
+  margin-top: 0.1rem;
+  /* أو 0 لو عايزها تلتصق تماماً */
+  margin-bottom: 0.4rem;
+  /* تحكم في المسافة السفلية أيضاً لو حبيت */
 }
 
 .hero-text .highlight,
@@ -91,7 +93,8 @@ h2 .highlight {
 
 .hero-text p {
   text-align: left;
-  margin-top: 0.2rem; /* قلل القيمة كما تريد */
+  margin-top: 0.2rem;
+  /* قلل القيمة كما تريد */
   margin-bottom: 1rem;
   margin-left: 0;
 }
@@ -132,7 +135,8 @@ h2 .highlight {
 
 /* NEW HEXAGON CONTAINER */
 .hexagon-container {
-  width: 350px; /* الحجم الجديد */
+  width: 350px;
+  /* الحجم الجديد */
   aspect-ratio: 1;
   background: #25d7e2;
   clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
@@ -209,7 +213,8 @@ section p {
 .project-card img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* تظهر الصورة كاملة بدون قص */
+  object-fit: contain;
+  /* تظهر الصورة كاملة بدون قص */
   display: block;
   background: #fff;
   transition: transform 0.5s ease;
@@ -241,6 +246,7 @@ section p {
   text-align: center;
   padding: 2rem 8%;
 }
+
 .contact-cards {
   display: flex;
   justify-content: center;
@@ -282,6 +288,7 @@ section p {
 .contact-card a:hover {
   color: #25d7e2;
 }
+
 .contact-cards {
   display: flex;
   justify-content: center;
@@ -398,7 +405,8 @@ section p {
   border-radius: 10px;
   width: 100%;
   background: #1e293b;
-  aspect-ratio: 4/3; /* يجعل البطاقات متناسقة، ويمكنك تغييره حسب صورك */
+  aspect-ratio: 4/3;
+  /* يجعل البطاقات متناسقة، ويمكنك تغييره حسب صورك */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,7 +415,8 @@ section p {
 .achievement-card img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* تظهر الصورة كاملة بدون قص */
+  object-fit: contain;
+  /* تظهر الصورة كاملة بدون قص */
   display: block;
   background: #fff;
   transition: transform 0.5s ease;
@@ -503,9 +512,11 @@ section p {
   box-shadow: 0 2px 16px #25d7e233;
   transition: transform 0.2s;
 }
+
 .education-photos img:hover {
   transform: scale(1.05);
 }
+
 .hero-img .hexagon-container {
   width: 270px;
   aspect-ratio: 1;
@@ -536,8 +547,7 @@ section p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(10%) brightness(1.08) contrast(1.12) saturate(1.18)
-    drop-shadow(0 2px 12px #25d7e2aa);
+  filter: grayscale(10%) brightness(1.08) contrast(1.12) saturate(1.18) drop-shadow(0 2px 12px #25d7e2aa);
   transition: filter 0.3s, transform 0.3s;
 }
 
@@ -604,9 +614,11 @@ section p {
   .services {
     padding: 1.2rem 2vw;
   }
+
   .services-grid {
     gap: 1.2rem;
   }
+
   .service-card {
     padding: 1.2rem 0.7rem 1rem 0.7rem;
     min-height: 200px;
@@ -617,18 +629,21 @@ section p {
   .skills-flex {
     gap: 1rem;
   }
+
   .skill-item {
     min-width: 120px;
     padding: 1.2rem 0.7rem 0.7rem 0.7rem;
     font-size: 1rem;
   }
+
   .skill-item i {
     font-size: 2rem;
   }
 }
 
 .about {
-  padding: 4rem 8% 2rem 8%; /* نفس باقي الأقسام */
+  padding: 4rem 8% 2rem 8%;
+  /* نفس باقي الأقسام */
 }
 
 .about-title {
@@ -686,8 +701,7 @@ section p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(10%) brightness(1.08) contrast(1.12) saturate(1.18)
-    drop-shadow(0 2px 12px #25d7e2aa);
+  filter: grayscale(10%) brightness(1.08) contrast(1.12) saturate(1.18) drop-shadow(0 2px 12px #25d7e2aa);
   transition: filter 0.3s, transform 0.3s;
 }
 
@@ -714,8 +728,10 @@ section p {
 
 .about-text p {
   display: -webkit-box;
-  -webkit-line-clamp: 12; /* عدد الأسطر قبل ظهور ... */
-  line-clamp: 12; /* عدد الأسطر قبل ظهور ... (خاص بالمعيار القياسي) */
+  -webkit-line-clamp: 12;
+  /* عدد الأسطر قبل ظهور ... */
+  line-clamp: 12;
+  /* عدد الأسطر قبل ظهور ... (خاص بالمعيار القياسي) */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -743,21 +759,26 @@ section p {
   text-overflow: unset;
 }
 
-.read-more-btn {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  background: #25d7e2;
-  color: #fff;
+.read-more-btn,
+.close-btn {
+  background: transparent;
+  color: #25d7e2;
   border: none;
-  border-radius: 8px;
-  padding: 0.5rem 1.5rem;
+  padding: 0;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 2;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.close-btn {
+.read-more-btn:hover,
+.close-btn:hover {
+  color: #1caab3;
+}
+
+
+.top-close-btn {
   position: absolute;
   top: 12px;
   right: 16px;
@@ -803,26 +824,31 @@ section p {
     gap: 2rem;
     align-items: center;
   }
+
   .about-img {
     justify-content: center;
     margin-bottom: 1.5rem;
   }
+
   .about-text {
     padding: 1.5rem 1rem;
     max-width: 100%;
     align-items: center;
     text-align: center;
   }
+
   .about-text p {
     text-align: center;
   }
 }
+
 @media (max-width: 700px) {
   .education-photos {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
   }
+
   .education-photos img {
     width: 90vw;
     max-width: 340px;
@@ -830,10 +856,12 @@ section p {
     border-radius: 14px;
   }
 }
+
 @media (max-width: 700px) {
   .education-photos img[src*="grad3.jpg"] {
     display: none;
   }
+
   .education-photos img[src*="grad3 - Copy.jpg"] {
     display: block;
     width: 90vw;
@@ -842,19 +870,23 @@ section p {
     border-radius: 14px;
   }
 }
+
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
     align-items: center;
     padding: 2rem 2vw;
   }
+
   .hero-img {
-    order: -1; /* يجعل الصورة تظهر فوق */
+    order: -1;
+    /* يجعل الصورة تظهر فوق */
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
     width: 100%;
   }
+
   .hero-text {
     text-align: center;
     width: 100%;
@@ -868,22 +900,28 @@ section p {
     gap: 2rem;
     align-items: center;
   }
+
   .about-img {
     justify-content: center;
     margin-bottom: 1.5rem;
   }
+
   .about-text {
     padding: 1.5rem 1rem;
     max-width: 100%;
     align-items: center;
     text-align: center;
-    min-height: 340px; /* زود ارتفاع المربع */
-    max-height: 440px; /* زود أقصى ارتفاع */
+    min-height: 340px;
+    /* زود ارتفاع المربع */
+    max-height: 440px;
+    /* زود أقصى ارتفاع */
   }
+
   .about-text.expanded {
     min-height: 80vh;
     max-height: 100vh;
   }
+
   .about-text p {
     text-align: center;
   }
@@ -896,13 +934,17 @@ section p {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: #0f172a; /* نفس لون الخلفية العامة */
+  background-color: #0f172a;
+  /* نفس لون الخلفية العامة */
   pointer-events: none;
-  opacity: 0.09; /* يمكنك تعديل الشفافية حسب الحاجة */
+  opacity: 0.09;
+  /* يمكنك تعديل الشفافية حسب الحاجة */
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /* Popup Modal for images */
 .img-modal {
   display: none;
@@ -930,12 +972,14 @@ html {
   flex-direction: column;
   align-items: center;
   position: relative;
-  overflow-y: auto; /* اجعل الكونتينر كله يسكرول */
+  overflow-y: auto;
+  /* اجعل الكونتينر كله يسكرول */
 }
 
 .img-modal-content img {
   max-width: 80vw;
-  max-height: 55vh; /* يمكنك تقليلها أو إزالتها إذا أردت الصورة تسكرول */
+  max-height: 55vh;
+  /* يمكنك تقليلها أو إزالتها إذا أردت الصورة تسكرول */
   border-radius: 12px;
   margin-bottom: 1.2rem;
   background: #fff;
@@ -963,7 +1007,8 @@ html {
   text-align: center;
   max-width: 80vw;
   /* احذف max-height هنا */
-  overflow-y: visible; /* خلي السكول للكونتينر فقط */
+  overflow-y: visible;
+  /* خلي السكول للكونتينر فقط */
   margin-bottom: 0.5rem;
   padding: 0.5rem 0.5rem;
   box-sizing: border-box;
@@ -995,15 +1040,19 @@ html {
     align-self: center;
     text-align: center;
   }
+
   nav ul.nav-links.active {
     right: 0;
   }
+
   .menu-icon {
     display: block;
   }
+
   nav {
     padding: 1rem 1.5rem;
   }
+
   nav ul {
     gap: 0;
   }
@@ -1014,6 +1063,7 @@ html {
     width: 70px !important;
     height: 70px !important;
   }
+
   #imgModalImages img.selected {
     width: 180px !important;
     height: 180px !important;

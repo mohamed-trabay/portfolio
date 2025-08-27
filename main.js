@@ -50,24 +50,30 @@ document.addEventListener("DOMContentLoaded", function () {
 // Read More functionality
 const readMoreBtn = document.getElementById("readMoreBtn");
 const closeBtn = document.getElementById("closeBtn");
+const topCloseBtn = document.getElementById("topCloseBtn");
 const aboutText = document.getElementById("aboutText");
-const aboutContent = document.querySelector(".about-content");
 
-if (readMoreBtn && closeBtn && aboutText && aboutContent) {
+if (readMoreBtn && closeBtn && topCloseBtn && aboutText) {
   readMoreBtn.onclick = function () {
     aboutText.classList.add("expanded");
-    aboutContent.classList.add("hide-img");
-    closeBtn.style.display = "flex";
+    closeBtn.style.display = "inline-block";
+    topCloseBtn.style.display = "inline-block";
     readMoreBtn.style.display = "none";
   };
 
-  closeBtn.onclick = function () {
+  function closeAbout() {
     aboutText.classList.remove("expanded");
-    aboutContent.classList.remove("hide-img");
     closeBtn.style.display = "none";
-    readMoreBtn.style.display = "block";
-  };
+    topCloseBtn.style.display = "none";
+    readMoreBtn.style.display = "inline-block";
+  }
+
+  closeBtn.onclick = closeAbout;
+  topCloseBtn.onclick = closeAbout;
 }
+
+
+
 
 // Modal Elements
 const imgModal = document.getElementById("imgModal");
