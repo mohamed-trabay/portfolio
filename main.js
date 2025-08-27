@@ -78,36 +78,68 @@ const imgModalImages = document.getElementById("imgModalImages");
 const imgModalPrev = document.getElementById("imgModalPrev");
 const imgModalNext = document.getElementById("imgModalNext");
 
-const faceImages = [
-  "assets/face/face1.jpg",
-  "assets/face/face2.jpg",
-  "assets/face/face3.jpg",
-  "assets/face/face4.jpg",
-  "assets/face/face5.jpg",
-  "assets/face/face6.jpg",
+const smartHomeImages = [
+  "assets/smart_home/dashbord.jpg",
+  "assets/smart_home/splash.jpg",
+  "assets/smart_home/signup.jpg",
+  "assets/smart_home/signin.jpg",
+  "assets/smart_home/prof.jpg",
+  "assets/smart_home/addusers.jpg",
+
+
+  "assets/smart_home/add.jpg",
+  "assets/smart_home/rooms.jpg",
+  "assets/smart_home/succes.jpg",
+
+
+  "assets/smart_home/room.jpg",
+  "assets/smart_home/stat.jpg",
+  "assets/smart_home/auto.jpg",
+
+  "assets/smart_home/noti.jpg",
+
+  "assets/smart_home/living.jpg",
+
+
+
+
+
+
 ];
 let currentFaceIndex = 0;
 
-const moveImages = [
-  "assets/moive/moive1.jpg",
-  "assets/moive/moive2.jpg",
-  "assets/moive/moive3.jpg",
-  "assets/moive/moive4.jpg",
-  "assets/moive/moive5.jpg",
-  "assets/moive/moive6.jpg",
+const booklyImages = [
+  "assets/bookly/home.png",
+  "assets/bookly/detail.png",
+  "assets/bookly/pay1.png",
+
+  "assets/bookly/pay2.png",
+
+  "assets/bookly/pay3.png",
 ];
 let currentMoveIndex = 0;
 
-const garageImages = [
-  "assets/garag/garag1.jpg",
-  "assets/garag/garag2.jpg",
-  "assets/garag/garag3.jpg",
-  "assets/garag/garag4.jpg",
-  "assets/garag/garag5.jpg",
-  "assets/garag/garag6.jpg",
-  "assets/garag/garag8.jpg",
-  "assets/garag/garag9.jpg",
-  "assets/garag/garag10.jpg",
+const whatsImages = [
+  "assets/whatsapp_clone/homew.png",
+  "assets/whatsapp_clone/homeb.png",
+
+  "assets/whatsapp_clone/chatw.png",
+
+  "assets/whatsapp_clone/chatb.png",
+  "assets/whatsapp_clone/statusw.png",
+
+  "assets/whatsapp_clone/statusb.png",
+
+  "assets/whatsapp_clone/story.png",
+
+  "assets/whatsapp_clone/storyb.png",
+
+  "assets/whatsapp_clone/splashw.png",
+
+  "assets/whatsapp_clone/splashb.png",
+
+
+
 ];
 let currentGarageIndex = 0;
 
@@ -143,7 +175,14 @@ const notesImages = [
 ];
 let currentNotesIndex = 0;
 
-const aiChatImages = ["assets/ChatAi/chatai1.jpg"];
+const eShopImages = [
+  "assets/eshop/home.jpg",
+  "assets/eshop/search.jpg",
+  "assets/eshop/item.jpg",
+  "assets/eshop/cart.png",
+  "assets/eshop/cart1.png"
+
+];
 let currentAiChatIndex = 0;
 
 // دوال عرض المودال لكل مشروع
@@ -154,8 +193,8 @@ function showFaceModal(index = 0) {
   imgModalNext.style.display = "block";
   currentFaceIndex = index;
 
-  imgModalImg.src = faceImages[currentFaceIndex];
-  imgModalImg.alt = "Face Detection Example " + (currentFaceIndex + 1);
+  imgModalImg.src = smartHomeImages[currentFaceIndex];
+  imgModalImg.alt = "Smart Home" + (currentFaceIndex + 1);
   imgModalImg.style.width = window.innerWidth < 700 ? "90vw" : "420px";
   imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "420px";
   imgModalImg.style.objectFit = "contain";
@@ -164,28 +203,29 @@ function showFaceModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Face Detection</strong><br>
-    This Flutter application allows users to detect faces in images using machine learning. It provides an interactive and user-friendly interface with the following main features:<br><br>
-    <strong> Key Features:</strong><br>
-    • Pick Image from the gallery<br>
-    • Capture Image using the camera<br>
-    • Clear the image and results<br>
-    Once the user selects or captures an image, the app uses Google ML Kit to detect faces and draws green rectangles around each detected face.<br><br>
-    <strong> Technologies Used:</strong><br>
-    • Flutter – for building the cross-platform UI<br>
-    • Google ML Kit – for face detection using on-device machine learning<br>
-    • Image Picker – for selecting images from the gallery or capturing from the camera<br>
-    • CustomPainter – to draw bounding boxes over detected faces<br>
-    • SnackBar – to show the number of faces detected in a user-friendly way<br><br>
-    <strong>Skills:</strong> Responsive UI Design · User Experience (UX) · Image Picker Integration · Custom Painting in Flutter · Google ML Kit · Image Processing
+    <strong>Smart Home System</strong><br>
+This Flutter application allows users to control and monitor their smart home devices from anywhere. It provides an interactive and user-friendly interface with the following main features:<br><br>
+<strong>Key Features:</strong><br>
+• View and manage all connected devices<br>
+• Control lights, temperature, and appliances<br>
+• Monitor rooms with real-time status<br>
+• Add or remove devices easily<br><br>
+Once the user interacts with the app, it communicates with a backend system to update device statuses and provides instant feedback.<br><br>
+<strong>Technologies Used:</strong><br>
+• Flutter – for building the cross-platform UI<br>
+• Firebase – for real-time data synchronization<br>
+• REST API – for device communication<br>
+• Bloc/Cubit State Management – to manage app state efficiently<br><br>
+<strong>Skills:</strong> Responsive UI Design · User Experience (UX) · Real-time Data Handling · State Management · IoT Integration · Flutter Development
+
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
 
 function highlightFaceImage() {
-  imgModalImg.src = faceImages[currentFaceIndex];
-  imgModalImg.alt = "Face Detection Example " + (currentFaceIndex + 1);
+  imgModalImg.src = smartHomeImages[currentFaceIndex];
+  imgModalImg.alt = "Smart Home " + (currentFaceIndex + 1);
 }
 
 function showMoveModal(index = 0) {
@@ -195,8 +235,8 @@ function showMoveModal(index = 0) {
   imgModalNext.style.display = "block";
   currentMoveIndex = index;
 
-  imgModalImg.src = moveImages[currentMoveIndex];
-  imgModalImg.alt = "Move App Example " + (currentMoveIndex + 1);
+  imgModalImg.src = booklyImages[currentMoveIndex];
+  imgModalImg.alt = "Bookly App" + (currentMoveIndex + 1);
   imgModalImg.style.width = window.innerWidth < 700 ? "90vw" : "420px";
   imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "420px";
   imgModalImg.style.objectFit = "contain";
@@ -205,23 +245,25 @@ function showMoveModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Move App</strong><br>
-    This Flutter application helps users discover and track movies. It features a beautiful UI, movie details, search functionality, and more.<br><br>
-    <strong>Key Features:</strong><br>
-    • Browse trending and popular movies<br>
-    • Search for movies<br>
-    • View detailed information and trailers<br>
-    • Add movies to favorites<br><br>
-    <strong>Technologies Used:</strong><br>
-    • Flutter · REST API · Responsive UI · State Management
+    <strong>Bookly App</strong><br>
+This Flutter application allows users to browse, book, and pay for services or products directly within the app. It provides a smooth and user-friendly experience with integrated payment options.<br><br>
+<strong>Key Features:</strong><br>
+• Browse available services or products<br>
+• Book appointments or orders<br>
+• Secure in-app payment integration<br>
+• View booking history and details<br>
+• Receive notifications and confirmations<br><br>
+<strong>Technologies Used:</strong><br>
+• Flutter · REST API · Payment Gateway Integration · Responsive UI · State Management
+
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
 
 function highlightMoveImage() {
-  imgModalImg.src = moveImages[currentMoveIndex];
-  imgModalImg.alt = "Move App Example " + (currentMoveIndex + 1);
+  imgModalImg.src = booklyImages[currentMoveIndex];
+  imgModalImg.alt = "Bookly App" + (currentMoveIndex + 1);
 }
 
 function showGarageModal(index = 0) {
@@ -231,7 +273,7 @@ function showGarageModal(index = 0) {
   imgModalNext.style.display = "block";
   currentGarageIndex = index;
 
-  imgModalImg.src = garageImages[currentGarageIndex];
+  imgModalImg.src = whatsImages[currentGarageIndex];
   imgModalImg.alt = "Smart Garage Example " + (currentGarageIndex + 1);
   imgModalImg.style.width = window.innerWidth < 700 ? "90vw" : "420px";
   imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "420px";
@@ -241,22 +283,24 @@ function showGarageModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Smart Garage</strong><br>
-    This project provides a smart solution for managing parking spaces and reservations using a modern UI and real-time updates.<br><br>
-    <strong>Key Features:</strong><br>
-    • View available and occupied spaces<br>
-    • Reserve and manage parking<br>
-    • Payment integration<br>
-    • User profile management<br><br>
-    <strong>Technologies Used:</strong><br>
-    • Flutter · Firebase · Responsive UI · State Management
+   <strong>WhatsApp Clone</strong><br>
+This Flutter application is a complete replica of the original WhatsApp, designed with pixel-perfect accuracy and production-quality details. It works seamlessly across devices and platforms, offering both Light and Dark mode support.<br><br>
+<strong>Key Features:</strong><br>
+• Chat list with real-time updates<br>
+• One-to-one conversation screen<br>
+• Status (Stories) feature<br>
+• Profile and settings management<br>
+• Full support for Light & Dark themes<br><br>
+<strong>Technologies Used:</strong><br>
+• Flutter · Responsive UI · State Management · Cross-Platform Support
+
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
 
 function highlightGarageImage() {
-  imgModalImg.src = garageImages[currentGarageIndex];
+  imgModalImg.src = whatsImages[currentGarageIndex];
   imgModalImg.alt = "Smart Garage Example " + (currentGarageIndex + 1);
 }
 
@@ -407,11 +451,11 @@ function highlightNotesImage() {
 function showAiChatModal(index = 0) {
   imgModalImages.style.display = "none";
   imgModalImg.style.display = "block";
-  imgModalPrev.style.display = "none";
-  imgModalNext.style.display = "none";
+  imgModalPrev.style.display = "block";
+  imgModalNext.style.display = "block";
   currentAiChatIndex = index;
 
-  imgModalImg.src = aiChatImages[currentAiChatIndex];
+  imgModalImg.src = eShopImages[currentAiChatIndex];
   imgModalImg.alt = "AI Chat Example " + (currentAiChatIndex + 1);
   imgModalImg.style.border = "none";
   imgModalImg.style.boxShadow = "none";
@@ -422,33 +466,40 @@ function showAiChatModal(index = 0) {
   imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "auto";
 
   imgModalText.innerHTML = `
-    <strong>AI Chat</strong><br>
-    A simple AI-powered chat application.<br><br>
-    <strong>Key Features:</strong><br>
-    • Chat with AI<br>
-    • Simple UI<br>
-    • Fast response<br><br>
-    <strong>Technologies Used:</strong><br>
-    • Flutter · AI API · Responsive UI
+   <strong>E-Commerce App</strong><br>
+This Flutter application provides a complete online shopping experience with a modern UI and smooth navigation. It allows users to browse products, manage their cart, and complete secure checkouts.<br><br>
+<strong>Key Features:</strong><br>
+• Browse and search products by category<br>
+• Add products to cart and manage items<br>
+• Secure checkout process<br>
+• User authentication and profile management<br>
+• Order tracking and history<br><br>
+<strong>Technologies Used:</strong><br>
+• Flutter · REST API · Firebase · State Management · Responsive UI
+
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
+}
+function highlightAiChatImage() {
+  imgModalImg.src = eShopImages[currentAiChatIndex];
+  imgModalImg.alt = "AI Chat Example " + (currentAiChatIndex + 1);
 }
 
 // أسهم التنقل
 imgModalPrev.onclick = function (e) {
   e.stopPropagation();
-  if (imgModalImg.alt.startsWith("Face Detection")) {
+  if (imgModalImg.alt.startsWith("Smart Home")) {
     currentFaceIndex =
-      (currentFaceIndex - 1 + faceImages.length) % faceImages.length;
+      (currentFaceIndex - 1 + smartHomeImages.length) % smartHomeImages.length;
     highlightFaceImage();
-  } else if (imgModalImg.alt.startsWith("Move App")) {
+  } else if (imgModalImg.alt.startsWith("Bookly App")) {
     currentMoveIndex =
-      (currentMoveIndex - 1 + moveImages.length) % moveImages.length;
+      (currentMoveIndex - 1 + booklyImages.length) % booklyImages.length;
     highlightMoveImage();
   } else if (imgModalImg.alt.startsWith("Smart Garage")) {
     currentGarageIndex =
-      (currentGarageIndex - 1 + garageImages.length) % garageImages.length;
+      (currentGarageIndex - 1 + whatsImages.length) % whatsImages.length;
     highlightGarageImage();
   } else if (imgModalImg.alt.startsWith("Chat App")) {
     currentChatIndex =
@@ -468,21 +519,21 @@ imgModalPrev.onclick = function (e) {
     highlightNotesImage();
   } else if (imgModalImg.alt.startsWith("AI Chat")) {
     currentAiChatIndex =
-      (currentAiChatIndex - 1 + aiChatImages.length) % aiChatImages.length;
+      (currentAiChatIndex - 1 + eShopImages.length) % eShopImages.length;
     highlightAiChatImage();
   }
 };
 
 imgModalNext.onclick = function (e) {
   e.stopPropagation();
-  if (imgModalImg.alt.startsWith("Face Detection")) {
-    currentFaceIndex = (currentFaceIndex + 1) % faceImages.length;
+  if (imgModalImg.alt.startsWith("Smart Home")) {
+    currentFaceIndex = (currentFaceIndex + 1) % smartHomeImages.length;
     highlightFaceImage();
-  } else if (imgModalImg.alt.startsWith("Move App")) {
-    currentMoveIndex = (currentMoveIndex + 1) % moveImages.length;
+  } else if (imgModalImg.alt.startsWith("Bookly App")) {
+    currentMoveIndex = (currentMoveIndex + 1) % booklyImages.length;
     highlightMoveImage();
   } else if (imgModalImg.alt.startsWith("Smart Garage")) {
-    currentGarageIndex = (currentGarageIndex + 1) % garageImages.length;
+    currentGarageIndex = (currentGarageIndex + 1) % whatsImages.length;
     highlightGarageImage();
   } else if (imgModalImg.alt.startsWith("Chat App")) {
     currentChatIndex = (currentChatIndex + 1) % chatImages.length;
@@ -497,7 +548,7 @@ imgModalNext.onclick = function (e) {
     currentNotesIndex = (currentNotesIndex + 1) % notesImages.length;
     highlightNotesImage();
   } else if (imgModalImg.alt.startsWith("AI Chat")) {
-    currentAiChatIndex = (currentAiChatIndex + 1) % aiChatImages.length;
+    currentAiChatIndex = (currentAiChatIndex + 1) % eShopImages.length;
     highlightAiChatImage();
   }
 };
@@ -509,12 +560,12 @@ document
     card.addEventListener("click", function () {
       const img = card.querySelector("img");
       // Face Detection project
-      if (img.alt === "Face Detection") {
+      if (img.alt === "Smart Home") {
         showFaceModal(0);
         return;
       }
       // Move App project
-      if (img.alt === "Move App") {
+      if (img.alt === "Bookly App") {
         showMoveModal(0);
         return;
       }
@@ -612,6 +663,6 @@ document
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:iabdelrahmanmagdy802@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:mohamed.nabil.flutter@gmail.com?subject=${subject}&body=${body}`;
     this.reset();
   });
