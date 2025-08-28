@@ -173,11 +173,15 @@ const newsImages = [
 ];
 let currentNewsIndex = 0;
 
-const notesImages = [
-  "assets/note/note1.jpg",
-  "assets/note/note2.jpg",
-  "assets/note/note3.jpg",
-  "assets/note/note4.jpg",
+const balancedImages = [
+  "assets/note/1.png",
+  "assets/note/2.png",
+  "assets/note/3.png",
+  "assets/note/4.png",
+  "assets/note/5.png",
+
+  "assets/note/6.png",
+
 ];
 let currentNotesIndex = 0;
 
@@ -425,7 +429,7 @@ function showNotesModal(index = 0) {
   imgModalNext.style.display = "block";
   currentNotesIndex = index;
 
-  imgModalImg.src = notesImages[currentNotesIndex];
+  imgModalImg.src = balancedImages[currentNotesIndex];
   imgModalImg.alt = "Notes App Example " + (currentNotesIndex + 1);
   imgModalImg.style.width = window.innerWidth < 700 ? "90vw" : "420px";
   imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "420px";
@@ -435,22 +439,25 @@ function showNotesModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Notes App</strong><br>
-    A Flutter application for creating, editing, and organizing notes with a simple and modern UI.<br><br>
-    <strong>Key Features:</strong><br>
-    • Create and edit notes<br>
-    • Organize notes by category<br>
-    • Responsive design<br>
-    • Search notes<br><br>
-    <strong>Technologies Used:</strong><br>
-    • Flutter · Local Storage · Responsive UI
+    <strong>Balanced Meal App</strong><br>
+A FlutterFlow application designed to help users maintain a healthy diet by calculating daily calorie intake based on their personal data.<br><br>
+
+<strong>Key Features:</strong><br>
+• Calculates daily calorie needs based on user data<br>
+• Tracks meals and consumed calories<br>
+• Prevents exceeding daily calorie limits except within allowed meals<br>
+• Simple and modern UI<br>
+• Data synchronization with Firebase<br><br>
+
+<strong>Technologies Used:</strong><br>
+• FlutterFlow · Firebase · REST API · Responsive UI
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
 
 function highlightNotesImage() {
-  imgModalImg.src = notesImages[currentNotesIndex];
+  imgModalImg.src = balancedImages[currentNotesIndex];
   imgModalImg.alt = "Notes App Example " + (currentNotesIndex + 1);
 }
 
@@ -521,7 +528,7 @@ imgModalPrev.onclick = function (e) {
     highlightNewsImage();
   } else if (imgModalImg.alt.startsWith("Notes App")) {
     currentNotesIndex =
-      (currentNotesIndex - 1 + notesImages.length) % notesImages.length;
+      (currentNotesIndex - 1 + balancedImages.length) % balancedImages.length;
     highlightNotesImage();
   } else if (imgModalImg.alt.startsWith("AI Chat")) {
     currentAiChatIndex =
@@ -551,7 +558,7 @@ imgModalNext.onclick = function (e) {
     currentNewsIndex = (currentNewsIndex + 1) % newsImages.length;
     highlightNewsImage();
   } else if (imgModalImg.alt.startsWith("Notes App")) {
-    currentNotesIndex = (currentNotesIndex + 1) % notesImages.length;
+    currentNotesIndex = (currentNotesIndex + 1) % balancedImages.length;
     highlightNotesImage();
   } else if (imgModalImg.alt.startsWith("AI Chat")) {
     currentAiChatIndex = (currentAiChatIndex + 1) % eShopImages.length;
