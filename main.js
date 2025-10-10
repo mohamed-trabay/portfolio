@@ -72,9 +72,6 @@ if (readMoreBtn && closeBtn && topCloseBtn && aboutText) {
   topCloseBtn.onclick = closeAbout;
 }
 
-
-
-
 // Modal Elements
 const imgModal = document.getElementById("imgModal");
 const imgModalImg = document.getElementById("imgModalImg");
@@ -91,26 +88,14 @@ const smartHomeImages = [
   "assets/smart_home/signin.jpg",
   "assets/smart_home/prof.jpg",
   "assets/smart_home/addusers.jpg",
-
-
   "assets/smart_home/add.jpg",
   "assets/smart_home/rooms.jpg",
   "assets/smart_home/succes.jpg",
-
-
   "assets/smart_home/room.jpg",
   "assets/smart_home/stat.jpg",
   "assets/smart_home/auto.jpg",
-
   "assets/smart_home/noti.jpg",
-
   "assets/smart_home/living.jpg",
-
-
-
-
-
-
 ];
 let currentFaceIndex = 0;
 
@@ -118,9 +103,7 @@ const booklyImages = [
   "assets/bookly/home.png",
   "assets/bookly/detail.png",
   "assets/bookly/pay1.png",
-
   "assets/bookly/pay2.png",
-
   "assets/bookly/pay3.png",
 ];
 let currentMoveIndex = 0;
@@ -128,24 +111,14 @@ let currentMoveIndex = 0;
 const whatsImages = [
   "assets/whatsapp_clone/homew.png",
   "assets/whatsapp_clone/homeb.png",
-
   "assets/whatsapp_clone/chatw.png",
-
   "assets/whatsapp_clone/chatb.png",
   "assets/whatsapp_clone/statusw.png",
-
   "assets/whatsapp_clone/statusb.png",
-
   "assets/whatsapp_clone/story.png",
-
   "assets/whatsapp_clone/storyb.png",
-
   "assets/whatsapp_clone/splashw.png",
-
   "assets/whatsapp_clone/splashb.png",
-
-
-
 ];
 let currentGarageIndex = 0;
 
@@ -179,9 +152,7 @@ const balancedImages = [
   "assets/note/3.png",
   "assets/note/4.png",
   "assets/note/5.png",
-
   "assets/note/6.png",
-
 ];
 let currentNotesIndex = 0;
 
@@ -191,9 +162,57 @@ const eShopImages = [
   "assets/eshop/item.jpg",
   "assets/eshop/cart.png",
   "assets/eshop/cart1.png"
-
 ];
 let currentAiChatIndex = 0;
+
+// ============================================
+// ZABOOMAA PROJECT MODAL
+// ============================================
+const zaboomaaImages = [
+  "assets/US - Made with Clipchamp.mp4",
+];
+let currentZaboomaaIndex = 0;
+
+function showZaboomaaModal(index = 0) {
+  imgModalImages.style.display = "none";
+  imgModalImg.style.display = "none";
+  imgModalPrev.style.display = "none";
+  imgModalNext.style.display = "none";
+
+  imgModalText.innerHTML = `
+    <strong>Zaboomaa Internship - Unique Supplement Project</strong><br>
+    <div style="margin: 1.5rem 0; width: 100%; max-width: 600px;">
+      <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299;">
+        <source src="assets/US - Made with Clipchamp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div><br>
+    <strong>Project Overview:</strong><br>
+    Converted a web-based e-commerce platform into a fully functional Flutter mobile application 
+    for Unique Sublimen, a premium product store.<br><br>
+    
+    <strong>Key Features Implemented:</strong><br>
+    • Complete product catalog with API integration<br>
+    • Advanced search functionality with real-time filtering<br>
+    • Favorites system with persistent storage using SharedPreferences<br>
+    • Shopping cart with local storage persistence<br>
+    • Product filtering by categories and attributes<br>
+    • Beautiful, responsive UI with smooth animations<br>
+    • Dark and Light theme support<br>
+    • Payment gateway integration (PayMob)<br>
+    • Order details and address management before checkout<br><br>
+    
+    <strong>Technologies Used:</strong><br>
+    • Flutter · Dart · REST API · SharedPreferences · Firebase · PayMob Payment Gateway<br>
+    • State Management · Responsive UI Design<br><br>
+    
+    <strong>Skills Demonstrated:</strong><br>
+    API Integration · UI/UX Design · Local Storage Management · Payment Processing · 
+    Search & Filter Implementation · State Management · Cross-platform Development
+  `;
+  imgModal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
 
 // دوال عرض المودال لكل مشروع
 function showFaceModal(index = 0) {
@@ -227,7 +246,6 @@ Once the user interacts with the app, it communicates with a backend system to u
 • REST API – for device communication<br>
 • Bloc/Cubit State Management – to manage app state efficiently<br><br>
 <strong>Skills:</strong> Responsive UI Design · User Experience (UX) · Real-time Data Handling · State Management · IoT Integration · Flutter Development
-
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
@@ -265,7 +283,6 @@ This Flutter application allows users to browse, book, and pay for services or p
 • Receive notifications and confirmations<br><br>
 <strong>Technologies Used:</strong><br>
 • Flutter · REST API · Payment Gateway Integration · Responsive UI · State Management
-
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
@@ -303,7 +320,6 @@ This Flutter application is a complete replica of the original WhatsApp, designe
 • Full support for Light & Dark themes<br><br>
 <strong>Technologies Used:</strong><br>
 • Flutter · Responsive UI · State Management · Cross-Platform Support
-
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
@@ -489,11 +505,11 @@ This Flutter application provides a complete online shopping experience with a m
 • Order tracking and history<br><br>
 <strong>Technologies Used:</strong><br>
 • Flutter · REST API · Firebase · State Management · Responsive UI
-
   `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
+
 function highlightAiChatImage() {
   imgModalImg.src = eShopImages[currentAiChatIndex];
   imgModalImg.alt = "AI Chat Example " + (currentAiChatIndex + 1);
@@ -612,6 +628,11 @@ document
         showAiChatModal(0);
         return;
       }
+      // ZABOOMAA PROJECT
+      if (img.alt === "Zaboomaa Projects") {
+        showZaboomaaModal(0);
+        return;
+      }
       // باقي المشاريع
       imgModalImages.style.display = "none";
       imgModalImg.style.display = "block";
@@ -661,7 +682,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// ...existing code...
 
 document
   .querySelector(".contact-form form")
