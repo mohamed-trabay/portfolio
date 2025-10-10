@@ -169,7 +169,7 @@ let currentAiChatIndex = 0;
 // ZABOOMAA PROJECT MODAL
 // ============================================
 const zaboomaaImages = [
-  "assets/US - Made with Clipchamp.mp4",
+  "assets/US - Made with Clipchamp.mp4"
 ];
 let currentZaboomaaIndex = 0;
 
@@ -180,8 +180,9 @@ function showZaboomaaModal(index = 0) {
   imgModalNext.style.display = "none";
 
   imgModalText.innerHTML = `
+  <div style="text-align:center;">
     <strong>Zaboomaa Internship - Unique Supplement Project</strong><br>
-    <div style="margin: 1.5rem 0; width: 100%; max-width: 600px;">
+    <div style="margin: 1.5rem auto; width: 100%; max-width: 600px;">
       <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299;">
         <source src="assets/US - Made with Clipchamp.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -209,7 +210,9 @@ function showZaboomaaModal(index = 0) {
     <strong>Skills Demonstrated:</strong><br>
     API Integration · UI/UX Design · Local Storage Management · Payment Processing · 
     Search & Filter Implementation · State Management · Cross-platform Development
-  `;
+  </div>
+`;
+
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
