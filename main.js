@@ -166,10 +166,10 @@ const eShopImages = [
 let currentAiChatIndex = 0;
 
 // ============================================
-// ZABOOMAA PROJECT MODAL
+// Unique Supplement PROJECT MODAL
 // ============================================
 const zaboomaaImages = [
-  "assets/US - Made with Clipchamp.mp4"
+  "assets/US.mp4"
 ];
 let currentZaboomaaIndex = 0;
 
@@ -181,10 +181,10 @@ function showZaboomaaModal(index = 0) {
 
   imgModalText.innerHTML = `
   <div style="text-align:center;">
-    <strong>Zaboomaa Internship - Unique Supplement Project</strong><br>
-    <div style="margin: 1.5rem auto; width: 100%; max-width: 600px;">
-      <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299;">
-        <source src="assets/US - Made with Clipchamp.mp4" type="video/mp4">
+    <strong>Zabooma Internship - Unique Supplement Project</strong><br>
+          <div style="margin: 1.5rem auto; width: 100%; max-width: 420px;">
+      <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299; max-height: 420px; object-fit: contain;">
+        <source src="assets/US.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div><br>
@@ -199,7 +199,6 @@ function showZaboomaaModal(index = 0) {
     • Shopping cart with local storage persistence<br>
     • Product filtering by categories and attributes<br>
     • Beautiful, responsive UI with smooth animations<br>
-    • Dark and Light theme support<br>
     • Payment gateway integration (PayMob)<br>
     • Order details and address management before checkout<br><br>
     
@@ -216,6 +215,61 @@ function showZaboomaaModal(index = 0) {
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
+// ========== SEHHA ADAM PROJECT MODAL ==========
+const SehhaImages = [
+  "assets/seht.mp4"
+];
+let currentSehhaModal = 0;
+function showSehhaModal(index = 0) {
+  imgModalImages.style.display = "none";
+  imgModalImg.style.display = "none";
+  imgModalPrev.style.display = "none";
+  imgModalNext.style.display = "none";
+
+  imgModalText.innerHTML = `
+    <div style="text-align:center; width:100%;">
+      <strong>صحه ادم - Seht Adam</strong><br>
+       <div style="margin: 1.2rem auto; width:100%; max-width: 420px;">
+        <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299; max-height: 420px; object-fit: contain;">
+          <source src="assets/seht.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+        <strong>Project Overview:</strong><br>
+        Seht Adam is a complete health and wellness mobile application developed using Flutter with Clean Architecture (MVVM) and Cubit for state management. 
+        This was originally a web-based platform that I successfully converted into a fully functional, production-ready mobile app.<br><br>
+
+        <strong>Key Features Implemented:</strong><br>
+        • Firebase Authentication (Login/Register) with email verification<br>
+        • Full bilingual support (Arabic/English) with seamless Localization - app language switches based on user preference<br>
+        • Dynamic Light & Dark themes with persistent storage using SharedPreferences<br>
+        • Local Push Notifications for daily health reminders and tracking<br>
+        • Advanced Search & Filter system for health products, articles, and meal plans<br>
+        • Complete E-commerce functionality with product catalog and categories<br>
+        • PayMob Payment Gateway integration for secure transactions<br>
+        • Shopping Cart with local persistence (favorites stored in SharedPreferences)<br>
+        • User Profile management with order history<br>
+        • Collect user details (address, phone, payment info) before checkout<br>
+        • Beautiful Splash Screen with custom animations<br>
+        • Fully responsive UI built with ScreenUtil - works perfectly on all devices<br>
+        • Backend API integration for real-time data synchronization<br>
+        • MVVM architecture with Repository pattern and Cubit state management<br><br>
+
+        <strong>Technologies Used:</strong><br>
+        • Flutter · Dart · MVVM · Cubit · Firebase Auth · REST API · Local Notifications<br>
+        • SharedPreferences · PayMob Payment · ScreenUtil · Responsive Design<br><br>
+
+        <strong>Technical Highlights:</strong><br>
+        Clean Architecture · State Management · Localization · Theming · Payment Integration · 
+        Authentication · API Integration · Local Storage · Animations · Cross-Platform Responsiveness
+      </div>
+    </div>
+  `;
+  imgModal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
 
 // دوال عرض المودال لكل مشروع
 function showFaceModal(index = 0) {
@@ -634,6 +688,12 @@ document
       // ZABOOMAA PROJECT
       if (img.alt === "Zaboomaa Projects") {
         showZaboomaaModal(0);
+        return;
+      }
+      // SEHHA ADAM PROJECT
+
+      if (img.alt === "Sehha Adam") {
+        showSehhaModal(0);
         return;
       }
       // باقي المشاريع
