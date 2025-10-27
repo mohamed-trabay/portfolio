@@ -180,37 +180,37 @@ function showZaboomaaModal(index = 0) {
   imgModalNext.style.display = "none";
 
   imgModalText.innerHTML = `
-  <div style="text-align:center;">
-    <strong>Zabooma Internship - Unique Supplement Project</strong><br>
-          <div style="margin: 1.5rem auto; width: 100%; max-width: 420px;">
-      <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299; max-height: 420px; object-fit: contain;">
-        <source src="assets/US.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div><br>
-    <strong>Project Overview:</strong><br>
-    Converted a web-based e-commerce platform into a fully functional Flutter mobile application 
-    for Unique Sublimen, a premium product store.<br><br>
-    
-    <strong>Key Features Implemented:</strong><br>
-    • Complete product catalog with API integration<br>
-    • Advanced search functionality with real-time filtering<br>
-    • Favorites system with persistent storage using SharedPreferences<br>
-    • Shopping cart with local storage persistence<br>
-    • Product filtering by categories and attributes<br>
-    • Beautiful, responsive UI with smooth animations<br>
-    • Payment gateway integration (PayMob)<br>
-    • Order details and address management before checkout<br><br>
-    
-    <strong>Technologies Used:</strong><br>
-    • Flutter · Dart · REST API · SharedPreferences · Firebase · PayMob Payment Gateway<br>
-    • State Management · Responsive UI Design<br><br>
-    
-    <strong>Skills Demonstrated:</strong><br>
-    API Integration · UI/UX Design · Local Storage Management · Payment Processing · 
-    Search & Filter Implementation · State Management · Cross-platform Development
-  </div>
-`;
+      <div style="text-align:center;">
+        <strong>Zabooma Internship - Unique Supplement Project</strong><br>
+              <div style="margin: 1.5rem auto; width: 100%; max-width: 420px;">
+          <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299; max-height: 420px; object-fit: contain;">
+            <source src="assets/US.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div><br>
+        <strong>Project Overview:</strong><br>
+        Converted a web-based e-commerce platform into a fully functional Flutter mobile application 
+        for Unique Sublimen, a premium product store.<br><br>
+        
+        <strong>Key Features Implemented:</strong><br>
+        • Complete product catalog with API integration<br>
+        • Advanced search functionality with real-time filtering<br>
+        • Favorites system with persistent storage using SharedPreferences<br>
+        • Shopping cart with local storage persistence<br>
+        • Product filtering by categories and attributes<br>
+        • Beautiful, responsive UI with smooth animations<br>
+        • Payment gateway integration (PayMob)<br>
+        • Order details and address management before checkout<br><br>
+        
+        <strong>Technologies Used:</strong><br>
+        • Flutter · Dart · REST API · SharedPreferences · Firebase · PayMob Payment Gateway<br>
+        • State Management · Responsive UI Design<br><br>
+        
+        <strong>Skills Demonstrated:</strong><br>
+        API Integration · UI/UX Design · Local Storage Management · Payment Processing · 
+        Search & Filter Implementation · State Management · Cross-platform Development
+      </div>
+    `;
 
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
@@ -227,48 +227,106 @@ function showSehhaModal(index = 0) {
   imgModalNext.style.display = "none";
 
   imgModalText.innerHTML = `
-    <div style="text-align:center; width:100%;">
-      <strong>صحه ادم - Seht Adam</strong><br>
-       <div style="margin: 1.2rem auto; width:100%; max-width: 420px;">
-        <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299; max-height: 420px; object-fit: contain;">
-          <source src="assets/seht.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+        <div style="text-align:center; width:100%;">
+          <strong>صحه ادم - Seht Adam</strong><br>
+          <div style="margin: 1.2rem auto; width:100%; max-width: 420px;">
+            <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299; max-height: 420px; object-fit: contain;">
+              <source src="assets/seht.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-        <strong>Project Overview:</strong><br>
-        Seht Adam is a complete health and wellness mobile application developed using Flutter with Clean Architecture (MVVM) and Cubit for state management. 
-        This was originally a web-based platform that I successfully converted into a fully functional, production-ready mobile app.<br><br>
+            <strong>Project Overview:</strong><br>
+            Seht Adam is a complete health and wellness mobile application developed using Flutter with Clean Architecture (MVVM) and Cubit for state management. 
+            This was originally a web-based platform that I successfully converted into a fully functional, production-ready mobile app.<br><br>
 
-        <strong>Key Features Implemented:</strong><br>
-        • Firebase Authentication (Login/Register) with email verification<br>
-        • Full bilingual support (Arabic/English) with seamless Localization - app language switches based on user preference<br>
-        • Dynamic Light & Dark themes with persistent storage using SharedPreferences<br>
-        • Local Push Notifications for daily health reminders and tracking<br>
-        • Advanced Search & Filter system for health products, articles, and meal plans<br>
-        • Complete E-commerce functionality with product catalog and categories<br>
-        • PayMob Payment Gateway integration for secure transactions<br>
-        • Shopping Cart with local persistence (favorites stored in SharedPreferences)<br>
-        • User Profile management with order history<br>
-        • Collect user details (address, phone, payment info) before checkout<br>
-        • Beautiful Splash Screen with custom animations<br>
-        • Fully responsive UI built with ScreenUtil - works perfectly on all devices<br>
-        • Backend API integration for real-time data synchronization<br>
-        • MVVM architecture with Repository pattern and Cubit state management<br><br>
+            <strong>Key Features Implemented:</strong><br>
+            • Firebase Authentication (Login/Register) with email verification<br>
+            • Full bilingual support (Arabic/English) with seamless Localization - app language switches based on user preference<br>
+            • Dynamic Light & Dark themes with persistent storage using SharedPreferences<br>
+            • Local Push Notifications for daily health reminders and tracking<br>
+            • Advanced Search & Filter system for health products, articles, and meal plans<br>
+            • Complete E-commerce functionality with product catalog and categories<br>
+            • PayMob Payment Gateway integration for secure transactions<br>
+            • Shopping Cart with local persistence (favorites stored in SharedPreferences)<br>
+            • User Profile management with order history<br>
+            • Collect user details (address, phone, payment info) before checkout<br>
+            • Beautiful Splash Screen with custom animations<br>
+            • Fully responsive UI built with ScreenUtil - works perfectly on all devices<br>
+            • Backend API integration for real-time data synchronization<br>
+            • MVVM architecture with Repository pattern and Cubit state management<br><br>
 
-        <strong>Technologies Used:</strong><br>
-        • Flutter · Dart · MVVM · Cubit · Firebase Auth · REST API · Local Notifications<br>
-        • SharedPreferences · PayMob Payment · ScreenUtil · Responsive Design<br><br>
+            <strong>Technologies Used:</strong><br>
+            • Flutter · Dart · MVVM · Cubit · Firebase Auth · REST API · Local Notifications<br>
+            • SharedPreferences · PayMob Payment · ScreenUtil · Responsive Design<br><br>
 
-        <strong>Technical Highlights:</strong><br>
-        Clean Architecture · State Management · Localization · Theming · Payment Integration · 
-        Authentication · API Integration · Local Storage · Animations · Cross-Platform Responsiveness
-      </div>
-    </div>
-  `;
+            <strong>Technical Highlights:</strong><br>
+            Clean Architecture · State Management · Localization · Theming · Payment Integration · 
+            Authentication · API Integration · Local Storage · Animations · Cross-Platform Responsiveness
+          </div>
+        </div>
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
+// ========== pet pass PROJECT MODAL ==========   
+const petpassImages = [
+  "assets/pet pass .mp4"
+];
+let currentpetpassModal = 0;
+function showpetpassModal(index = 0) {
+  imgModalImages.style.display = "none";
+  imgModalImg.style.display = "none";
+  imgModalPrev.style.display = "none";
+  imgModalNext.style.display = "none";
+
+  imgModalText.innerHTML = `
+        <div style="text-align:center; width:100%;">
+          <strong>Pet Pass</strong><br>
+          <div style="margin: 1.2rem auto; width:100%; max-width: 420px;">
+            <video width="100%" height="auto" controls muted style="border-radius: 12px; background: #000; box-shadow: 0 0 24px #25d7e299; max-height: 420px; object-fit: contain;">
+              <source src="assets/pet pass .mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+            <strong>Project Overview:</strong><br>
+  Pet Pass is a comprehensive mobile application that provides exclusive vouchers and deals for pet stores across the UAE. 
+  Built with Flutter using Clean Architecture (MVVM) and Cubit for state management, this production-ready app offers a premium subscription-based service for pet owners.<br><br>
+
+  <strong>Key Features Implemented:</strong><br>
+  • Complete Authentication System (Login/Register/Forgot Password) using REST API with JWT Token authentication<br>
+  • User Profile Management with subscription status tracking and profile image upload<br>
+  • Bilingual support (English only) with Light & Dark theme switching<br>
+  • 4-Tab Bottom Navigation: Home, Deals, Favorites, Premium<br>
+  • Animated Home Screen with banner carousel and latest offers section<br>
+  • Deals organized by categories with category-based filtering<br>
+  • Pagination implementation for efficient data loading<br>
+  • Local Favorites system (stored in SharedPreferences, cleared on logout)<br>
+  • Premium Subscription system with monthly/yearly plans<br>
+  • Stripe Payment Gateway integration for secure subscription payments<br>
+  • Subscription Details page showing subscription date and plan type<br>
+  • Access Control: Premium content locked until subscription is active<br>
+  • Voucher Details with copy functionality and direct store website links<br>
+  • Profile editing with image upload (Cloudinary integration)<br>
+  • Fully responsive UI built with ScreenUtil - works perfectly on all devices<br>
+  • Backend API integration for real-time data synchronization<br><br>
+
+  <strong>Technologies Used:</strong><br>
+  • Flutter · Dart · MVVM · Cubit · REST API · JWT Authentication · Stripe Payment<br>
+  • SharedPreferences · Secure Storage · Cloudinary · WebView · ScreenUtil<br>
+  • Dio · GoRouter · Carousel Slider · Cached Network Image · Shimmer Loading<br><br>
+
+  <strong>Technical Highlights:</strong><br>
+  Clean Architecture · State Management · Authentication & Authorization · Payment Integration · 
+  Subscription Management · API Integration · Local Storage · Image Upload · Deep Linking · 
+  Responsive Design · Loading States · Error Handling · Pagination · Category Filtering
+</div>
+      `;
+  imgModal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
 
 
 // دوال عرض المودال لكل مشروع
@@ -289,21 +347,21 @@ function showFaceModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Smart Home System</strong><br>
-This Flutter application allows users to control and monitor their smart home devices from anywhere. It provides an interactive and user-friendly interface with the following main features:<br><br>
-<strong>Key Features:</strong><br>
-• View and manage all connected devices<br>
-• Control lights, temperature, and appliances<br>
-• Monitor rooms with real-time status<br>
-• Add or remove devices easily<br><br>
-Once the user interacts with the app, it communicates with a backend system to update device statuses and provides instant feedback.<br><br>
-<strong>Technologies Used:</strong><br>
-• Flutter – for building the cross-platform UI<br>
-• Firebase – for real-time data synchronization<br>
-• REST API – for device communication<br>
-• Bloc/Cubit State Management – to manage app state efficiently<br><br>
-<strong>Skills:</strong> Responsive UI Design · User Experience (UX) · Real-time Data Handling · State Management · IoT Integration · Flutter Development
-  `;
+        <strong>Smart Home System</strong><br>
+    This Flutter application allows users to control and monitor their smart home devices from anywhere. It provides an interactive and user-friendly interface with the following main features:<br><br>
+    <strong>Key Features:</strong><br>
+    • View and manage all connected devices<br>
+    • Control lights, temperature, and appliances<br>
+    • Monitor rooms with real-time status<br>
+    • Add or remove devices easily<br><br>
+    Once the user interacts with the app, it communicates with a backend system to update device statuses and provides instant feedback.<br><br>
+    <strong>Technologies Used:</strong><br>
+    • Flutter – for building the cross-platform UI<br>
+    • Firebase – for real-time data synchronization<br>
+    • REST API – for device communication<br>
+    • Bloc/Cubit State Management – to manage app state efficiently<br><br>
+    <strong>Skills:</strong> Responsive UI Design · User Experience (UX) · Real-time Data Handling · State Management · IoT Integration · Flutter Development
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -330,17 +388,17 @@ function showMoveModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Bookly App</strong><br>
-This Flutter application allows users to browse, book, and pay for services or products directly within the app. It provides a smooth and user-friendly experience with integrated payment options.<br><br>
-<strong>Key Features:</strong><br>
-• Browse available services or products<br>
-• Book appointments or orders<br>
-• Secure in-app payment integration<br>
-• View booking history and details<br>
-• Receive notifications and confirmations<br><br>
-<strong>Technologies Used:</strong><br>
-• Flutter · REST API · Payment Gateway Integration · Responsive UI · State Management
-  `;
+        <strong>Bookly App</strong><br>
+    This Flutter application allows users to browse, book, and pay for services or products directly within the app. It provides a smooth and user-friendly experience with integrated payment options.<br><br>
+    <strong>Key Features:</strong><br>
+    • Browse available services or products<br>
+    • Book appointments or orders<br>
+    • Secure in-app payment integration<br>
+    • View booking history and details<br>
+    • Receive notifications and confirmations<br><br>
+    <strong>Technologies Used:</strong><br>
+    • Flutter · REST API · Payment Gateway Integration · Responsive UI · State Management
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -367,17 +425,17 @@ function showGarageModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-   <strong>WhatsApp Clone</strong><br>
-This Flutter application is a complete replica of the original WhatsApp, designed with pixel-perfect accuracy and production-quality details. It works seamlessly across devices and platforms, offering both Light and Dark mode support.<br><br>
-<strong>Key Features:</strong><br>
-• Chat list with real-time updates<br>
-• One-to-one conversation screen<br>
-• Status (Stories) feature<br>
-• Profile and settings management<br>
-• Full support for Light & Dark themes<br><br>
-<strong>Technologies Used:</strong><br>
-• Flutter · Responsive UI · State Management · Cross-Platform Support
-  `;
+      <strong>WhatsApp Clone</strong><br>
+    This Flutter application is a complete replica of the original WhatsApp, designed with pixel-perfect accuracy and production-quality details. It works seamlessly across devices and platforms, offering both Light and Dark mode support.<br><br>
+    <strong>Key Features:</strong><br>
+    • Chat list with real-time updates<br>
+    • One-to-one conversation screen<br>
+    • Status (Stories) feature<br>
+    • Profile and settings management<br>
+    • Full support for Light & Dark themes<br><br>
+    <strong>Technologies Used:</strong><br>
+    • Flutter · Responsive UI · State Management · Cross-Platform Support
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -404,16 +462,16 @@ function showChatModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Chat App</strong><br>
-    A modern chat application built with Flutter, supporting real-time messaging, authentication, and media sharing.<br><br>
-    <strong>Key Features:</strong><br>
-    • Real-time chat<br>
-    • User authentication<br>
-    • Send images and files<br>
-    • Responsive UI<br><br>
-    <strong>Technologies Used:</strong><br>
-    • Flutter · Firebase · Cloud Firestore · Authentication
-  `;
+        <strong>Chat App</strong><br>
+        A modern chat application built with Flutter, supporting real-time messaging, authentication, and media sharing.<br><br>
+        <strong>Key Features:</strong><br>
+        • Real-time chat<br>
+        • User authentication<br>
+        • Send images and files<br>
+        • Responsive UI<br><br>
+        <strong>Technologies Used:</strong><br>
+        • Flutter · Firebase · Cloud Firestore · Authentication
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -440,16 +498,16 @@ function showWeatherModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Weather App</strong><br>
-    A Flutter application to display weather information for different cities with a modern and responsive UI.<br><br>
-    <strong>Key Features:</strong><br>
-    • Real-time weather data<br>
-    • Search for cities<br>
-    • Attractive weather icons<br>
-    • Responsive design<br><br>
-    <strong>Technologies Used:</strong><br>
-    • Flutter · REST API · Responsive UI · State Management
-  `;
+        <strong>Weather App</strong><br>
+        A Flutter application to display weather information for different cities with a modern and responsive UI.<br><br>
+        <strong>Key Features:</strong><br>
+        • Real-time weather data<br>
+        • Search for cities<br>
+        • Attractive weather icons<br>
+        • Responsive design<br><br>
+        <strong>Technologies Used:</strong><br>
+        • Flutter · REST API · Responsive UI · State Management
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -476,16 +534,16 @@ function showNewsModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>News App</strong><br>
-    A Flutter application for browsing the latest news articles with categories, search, and a modern UI.<br><br>
-    <strong>Key Features:</strong><br>
-    • Browse news by category<br>
-    • Search for articles<br>
-    • Responsive design<br>
-    • Save favorite articles<br><br>
-    <strong>Technologies Used:</strong><br>
-    • Flutter · REST API · Responsive UI · State Management
-  `;
+        <strong>News App</strong><br>
+        A Flutter application for browsing the latest news articles with categories, search, and a modern UI.<br><br>
+        <strong>Key Features:</strong><br>
+        • Browse news by category<br>
+        • Search for articles<br>
+        • Responsive design<br>
+        • Save favorite articles<br><br>
+        <strong>Technologies Used:</strong><br>
+        • Flutter · REST API · Responsive UI · State Management
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -512,19 +570,19 @@ function showNotesModal(index = 0) {
   imgModalImg.style.border = "none";
 
   imgModalText.innerHTML = `
-    <strong>Balanced Meal App</strong><br>
-A FlutterFlow application designed to help users maintain a healthy diet by calculating daily calorie intake based on their personal data.<br><br>
+        <strong>Balanced Meal App</strong><br>
+    A FlutterFlow application designed to help users maintain a healthy diet by calculating daily calorie intake based on their personal data.<br><br>
 
-<strong>Key Features:</strong><br>
-• Calculates daily calorie needs based on user data<br>
-• Tracks meals and consumed calories<br>
-• Prevents exceeding daily calorie limits except within allowed meals<br>
-• Simple and modern UI<br>
-• Data synchronization with Firebase<br><br>
+    <strong>Key Features:</strong><br>
+    • Calculates daily calorie needs based on user data<br>
+    • Tracks meals and consumed calories<br>
+    • Prevents exceeding daily calorie limits except within allowed meals<br>
+    • Simple and modern UI<br>
+    • Data synchronization with Firebase<br><br>
 
-<strong>Technologies Used:</strong><br>
-• FlutterFlow · Firebase · REST API · Responsive UI
-  `;
+    <strong>Technologies Used:</strong><br>
+    • FlutterFlow · Firebase · REST API · Responsive UI
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -552,17 +610,17 @@ function showAiChatModal(index = 0) {
   imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "auto";
 
   imgModalText.innerHTML = `
-   <strong>E-Commerce App</strong><br>
-This Flutter application provides a complete online shopping experience with a modern UI and smooth navigation. It allows users to browse products, manage their cart, and complete secure checkouts.<br><br>
-<strong>Key Features:</strong><br>
-• Browse and search products by category<br>
-• Add products to cart and manage items<br>
-• Secure checkout process<br>
-• User authentication and profile management<br>
-• Order tracking and history<br><br>
-<strong>Technologies Used:</strong><br>
-• Flutter · REST API · Firebase · State Management · Responsive UI
-  `;
+      <strong>E-Commerce App</strong><br>
+    This Flutter application provides a complete online shopping experience with a modern UI and smooth navigation. It allows users to browse products, manage their cart, and complete secure checkouts.<br><br>
+    <strong>Key Features:</strong><br>
+    • Browse and search products by category<br>
+    • Add products to cart and manage items<br>
+    • Secure checkout process<br>
+    • User authentication and profile management<br>
+    • Order tracking and history<br><br>
+    <strong>Technologies Used:</strong><br>
+    • Flutter · REST API · Firebase · State Management · Responsive UI
+      `;
   imgModal.style.display = "flex";
   document.body.style.overflow = "hidden";
 }
@@ -694,6 +752,10 @@ document
 
       if (img.alt === "Sehha Adam") {
         showSehhaModal(0);
+        return;
+      }
+      if (img.alt === "pet pass") {
+        showpetpassModal(0);
         return;
       }
       // باقي المشاريع
