@@ -121,6 +121,35 @@ const whatsImages = [
   "assets/whatsapp_clone/splashb.png",
 ];
 let currentGarageIndex = 0;
+const suhbahImages = [
+  "assets/suhbah/1.png",
+  "assets/suhbah/2.png",
+
+  "assets/suhbah/3.png",
+  "assets/suhbah/4.png",
+
+  "assets/suhbah/5.png",
+
+  "assets/suhbah/6.png",
+
+  "assets/suhbah/7.png",
+
+  "assets/suhbah/8.png",
+
+  "assets/suhbah/9.png",
+
+  "assets/suhbah/10.png",
+
+  "assets/suhbah/11.png",
+
+  "assets/suhbah/12.png",
+
+
+  "assets/suhbah/13.png",
+
+
+];
+let currentsuhbahIndex = 0;
 
 const chatImages = [
   "assets/chat/chat1.jpg",
@@ -341,10 +370,15 @@ function showFaceModal(index = 0) {
   imgModalImg.alt = "Smart Home" + (currentFaceIndex + 1);
   imgModalImg.style.width = window.innerWidth < 700 ? "90vw" : "420px";
   imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "420px";
-  imgModalImg.style.objectFit = "contain";
-  imgModalImg.style.borderRadius = "16px";
-  imgModalImg.style.boxShadow = "0 0 24px #25d7e299";
   imgModalImg.style.border = "none";
+
+  imgModalImg.style.boxShadow = "none";
+
+  imgModalImg.style.background = "none";
+
+  imgModalImg.style.objectFit = "contain";
+
+  imgModalImg.style.borderRadius = "0";
 
   imgModalText.innerHTML = `
         <strong>Smart Home System</strong><br>
@@ -370,6 +404,72 @@ function highlightFaceImage() {
   imgModalImg.src = smartHomeImages[currentFaceIndex];
   imgModalImg.alt = "Smart Home " + (currentFaceIndex + 1);
 }
+function showSuhbahModal(index = 0) {
+  imgModalImages.style.display = "none";
+  imgModalImg.style.display = "block";
+  imgModalPrev.style.display = "block";
+  imgModalNext.style.display = "block";
+  currentFaceIndex = index;
+
+  imgModalImg.src = suhbahImages[currentsuhbahIndex];
+  imgModalImg.alt = "suhbah" + (currentsuhbahIndex + 1);
+  imgModalImg.style.width = window.innerWidth < 700 ? "90vw" : "420px";
+  imgModalImg.style.height = window.innerWidth < 700 ? "auto" : "420px";
+  imgModalImg.style.border = "none";
+
+  imgModalImg.style.boxShadow = "none";
+
+  imgModalImg.style.background = "none";
+
+  imgModalImg.style.objectFit = "contain";
+
+  imgModalImg.style.borderRadius = "0";
+  imgModalText.innerHTML = `
+        <strong>Sohba (صُحْبَة) - Islamic Companion App</strong><br>
+    A comprehensive Islamic mobile application developed collaboratively with a team of 3 developers and successfully published on Google Play Store and Apple App Store. The app serves as a complete worship companion for Muslim users worldwide.<br><br>
+    
+ 
+
+    <strong>Key Features:</strong><br>
+    • <strong>Prayer Times:</strong> Accurate prayer schedules with customizable Adhan notifications<br>
+    • <strong>Qibla Finder:</strong> Real-time compass directing users to Mecca using GPS<br>
+    • <strong>Digital Quran:</strong> Complete Mushaf with beautiful Arabic typography and smooth navigation<br>
+    • <strong>Hadith Collections:</strong> Authentic narrations from Prophet Muhammad (PBUH)<br>
+    • <strong>Daily Adhkar:</strong> Morning and evening remembrance and supplications<br>
+    • <strong>Nearest Mosque Locator:</strong> Find nearby mosques using location services<br>
+    • <strong>Islamic Radio:</strong> Live streaming of Quran recitations and Islamic content<br>
+    • <strong>Digital Tasbeeh:</strong> Electronic counter for dhikr and remembrance<br>
+    • <strong>Community Platform:</strong> Connect with fellow Muslims and share Islamic content<br><br>
+    <strong>Localization & Themes:</strong><br>
+    • Bilingual support (Arabic/English) with seamless language switching<br>
+    • Dark and Light themes for comfortable reading in any environment<br>
+    • Responsive UI adapting to different screen sizes<br><br>
+    <strong>Technologies Used:</strong><br>
+    • Flutter & Dart – for cross-platform development (iOS & Android)<br>
+    • MVVM Architecture – for clean, maintainable code structure<br>
+    • Bloc/Cubit State Management – efficient state handling across features<br>
+    • Location Services – for Qibla direction and mosque finder<br>
+    • Local Notifications – for prayer time reminders<br>
+    • Local Storage – for offline functionality and caching<br>
+    • REST APIs – for fetching prayer times and Islamic content<br>
+    • Firebase – for community features and real-time updates<br><br>
+    <strong>Development Highlights:</strong><br>
+    • Optimized battery consumption for background prayer notifications<br>
+    • Offline-first architecture ensuring reliability without internet<br>
+    • Published and maintained on both Google Play Store and Apple App Store<br>
+    • Collaborative development using Git/GitHub for version control<br>
+    • Implemented comprehensive error handling and edge case management<br><br>
+    <strong>Skills:</strong> Flutter Development · Cross-Platform Mobile Apps · MVVM Architecture · State Management (Bloc/Cubit) · Location Services · Local Notifications · Bilingual App Development · Dark/Light Themes · REST API Integration · Firebase · Team Collaboration · Git/GitHub · App Store Deployment · Google Play Publishing · Responsive UI Design · Offline-First Architecture
+      `;
+  imgModal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function highlightSuhbahImage() {
+  imgModalImg.src = suhbahImages[currentsuhbahIndex];
+  imgModalImg.alt = "suhbah" + (currentsuhbahIndex + 1);
+}
+
 
 function showMoveModal(index = 0) {
   imgModalImages.style.display = "none";
@@ -641,7 +741,12 @@ imgModalPrev.onclick = function (e) {
     currentMoveIndex =
       (currentMoveIndex - 1 + booklyImages.length) % booklyImages.length;
     highlightMoveImage();
-  } else if (imgModalImg.alt.startsWith("Smart Garage")) {
+  } else if (imgModalImg.alt.startsWith("suhbah")) {
+    currentsuhbahIndex =
+      (currentsuhbahIndex - 1 + suhbahImages.length) % suhbahImages.length;
+    highlightSuhbahImage();
+  }
+  else if (imgModalImg.alt.startsWith("Smart Garage")) {
     currentGarageIndex =
       (currentGarageIndex - 1 + whatsImages.length) % whatsImages.length;
     highlightGarageImage();
@@ -676,6 +781,10 @@ imgModalNext.onclick = function (e) {
   } else if (imgModalImg.alt.startsWith("Bookly App")) {
     currentMoveIndex = (currentMoveIndex + 1) % booklyImages.length;
     highlightMoveImage();
+  }
+  else if (imgModalImg.alt.startsWith("suhbah")) {
+    currentsuhbahIndex = (currentsuhbahIndex + 1) % suhbahImages.length;
+    highlightSuhbahImage();
   } else if (imgModalImg.alt.startsWith("Smart Garage")) {
     currentGarageIndex = (currentGarageIndex + 1) % whatsImages.length;
     highlightGarageImage();
@@ -713,6 +822,11 @@ document
         showMoveModal(0);
         return;
       }
+      // suhbah App project
+      if (img.alt === "suhbah") {
+        showSuhbahModal(0);
+        return;
+      }
       // Smart Garage project
       if (img.alt === "Smart Garage") {
         showGarageModal(0);
@@ -721,6 +835,10 @@ document
       // Chat App project
       if (img.alt === "Chat App") {
         showChatModal(0);
+        return;
+      }
+      if (img.alt === "suhbah App") {
+        showSuhbahModal(0);
         return;
       }
       // Weather App project
