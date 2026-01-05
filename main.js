@@ -440,9 +440,7 @@ function showSuhbahModal(index = 0) {
             </svg>
             Download on App Store
         </a>
-  
-
-    </div>
+  </div>
  
 
     <strong>Key Features:</strong><br>
